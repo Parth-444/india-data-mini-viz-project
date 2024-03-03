@@ -22,7 +22,7 @@ if plot:
     st.text('Color represents secondary parameter')
     if selected_state == 'Overall India':
         fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude',size=primary,
-                                color=secondary, zoom=6,size_max=35,hover_name='District',
+                                color=secondary, zoom=3,size_max=35,hover_name='District',
                                 mapbox_style='carto-positron', width=1200, height=700)
         st.plotly_chart(fig, use_container_width=True)
     else:
